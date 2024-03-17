@@ -2,7 +2,7 @@ name: Update Flight Data
 run-name: Fetch Data
 on:
   schedule:
-    - cron: '*/30 * * * * *'
+    - cron: '0,30 * * * *'
 
 jobs:
   update:
