@@ -1,6 +1,6 @@
 name: Update Flight Data
 run-name: Fetch Data
-on:
+on: [push]
   schedule:
     - cron: '0,30 * * * *'
 
