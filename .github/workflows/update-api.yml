@@ -19,7 +19,7 @@ jobs:
           distribution: 'adopt'
 
       - name: Fetch flight data from OpenSky Network API(Compile)
-        run: javac ../../api/scripts/Main.java
+        run: javac Main.java
         
       - name: Run java file
-        run: java ../../api/scripts/Main
+        run: java Main
