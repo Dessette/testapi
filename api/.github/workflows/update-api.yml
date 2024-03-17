@@ -1,0 +1,24 @@
+name: Update Flight Data
+run-name: Fetch Data
+on:
+  schedule:
+    - cron: '0 * * * *' # Update every hour
+
+jobs:
+  update:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up JDK
+        uses: actions/setup-java@v2
+        with:
+          java-version: '21'
+          distribution: 'adopt'
+
+      - name: Fetch flight data from OpenSky Network API
+        run: |
+          javac dataMan.java
+          java dataMan
