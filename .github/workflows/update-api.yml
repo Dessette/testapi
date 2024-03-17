@@ -6,7 +6,7 @@ on:
 
 jobs:
   update:
-    runs-on: DESKTOP-GPOA3VH
+    runs-on: [self-hosted , Windows , X64]
 
     steps:
       - name: Checkout repository
