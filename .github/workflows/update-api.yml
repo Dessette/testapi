@@ -20,5 +20,5 @@ jobs:
 
       - name: Fetch flight data from OpenSky Network API
         run: |
-          javac Main.java
-          java Main
+          javac api/scripts/Main.java
+          java api/scripts/Main
