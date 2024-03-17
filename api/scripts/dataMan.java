@@ -40,7 +40,7 @@ public class dataMan {
             }
 
             BufferedWriter writer;
-            String path = "C:\\Users\\kaan\\Desktop\\481test\\CyberSavants\\api\\data\\flights.json";
+            String path = "flights.json";
 
             for(String datum : data){
                 writer = new BufferedWriter(new FileWriter(path));
