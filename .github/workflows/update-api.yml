@@ -19,7 +19,4 @@ jobs:
           distribution: 'adopt'
 
       - name: Fetch flight data from OpenSky Network API(Compile)
-        run: javac api/scripts/Main.java
-        
-      - name: Run java file
-        run: java Main
+        run: Invoke-WebRequest -Uri 'https://opensky-network.org/api/states/all' -OutFile 'data\flights.json'
